@@ -36,4 +36,4 @@ The goal of this project was to create visualisations to reveal insights form a 
 
 [The Final Report](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/Udacity_Project_Tableau_Report.pdf)
 
-[Dataset Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/Flight_Delays_Data.zip)
+[Dataset Used](https://www.kaggle.com/datasets/usdot/flight-delays)
