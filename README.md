@@ -19,11 +19,11 @@ The objective of this project was to analyse real-life data from the New York St
 ## Project 3: Query a Digital Music Store Database
 In this project, the Chinook Database was queried to assist the Chinook team in understanding their media inventory, their customers, and invoice information.
 
-[The Final Presentation](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Udacity%20SQL%20Presentation.pdf)  
+[The Final Presentation](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Udacity_SQL_Presentation.pdf)  
   
-[Queries](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Udacity%20SQL%20Project%20Queries.txt)
+[Queries](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Udacity_SQL_Project_Queries.txt)
 
-[Database Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Chinook%20Database.db)
+[Database Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Chinook_Database.db)
 
 ## Project 4: Build Data Dashboards
 The goal of this project was to create visualisations to reveal insights form a dataset on 'Flight Delays and Cancellations.'
@@ -34,6 +34,6 @@ The goal of this project was to create visualisations to reveal insights form a 
 
 [Storyboard #3](https://public.tableau.com/views/UdacityProject-Insight3_17100929344320/Story1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
 
-[The Final Report](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/Udacity_Project_Tableau.pdf)
+[The Final Report](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/Udacity_Project_Tableau_Report.pdf)
 
-[Dataset Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/flight-delays.zip)
+[Dataset Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%204%3A%20Build%20Data%20Dashboards/Flight_Delays_Data.zip)
