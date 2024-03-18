@@ -1,0 +1,115 @@
+/* Query 1 */
+SELECT 
+  g.Name AS genre,
+  SUM(Quantity) AS total_purchases
+FROM 
+  Genre g
+  JOIN Track t ON g.GenreId = t.GenreId
+  JOIN InvoiceLine il ON t.TrackId = il.TrackId
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 10;
+
+/* Query 2 */
+SELECT 
+  al.Title AS album,
+  a.Name AS artist,
+  g.Name AS genre,
+  SUM(Quantity) AS total_purchases
+FROM 
+  Album al
+  JOIN Artist a ON al.ArtistId = a.ArtistId
+  JOIN Track t ON al.AlbumId = t.AlbumId
+  JOIN Genre g ON t.GenreId = g.GenreId
+  JOIN InvoiceLine il ON t.TrackId = il.TrackId
+WHERE genre = 'Rock'
+GROUP BY 1
+ORDER BY 4 DESC
+LIMIT 10;
+
+/* Query 3 */
+WITH top_albums AS (
+  SELECT 
+    al.Title AS album,
+    g.Name AS genre,
+    SUM(il.Quantity) AS total_purchases
+  FROM 
+    Album al
+    JOIN Track t ON al.AlbumId = t.AlbumId
+    JOIN Genre g ON t.GenreId = g.GenreId
+    JOIN InvoiceLine il ON t.TrackId = il.TrackId
+  WHERE genre = 'Rock'
+  GROUP BY 1
+  ORDER BY 3 DESC
+  LIMIT 10),
+top_songs AS (
+  SELECT 
+    t.Name AS track,
+    g.name AS genre,
+    al.Title AS album,
+    SUM(il.Quantity) AS total_purchases
+  FROM 
+    Track t
+    JOIN Album al ON t.AlbumId = al.AlbumId
+    JOIN Genre g ON t.GenreId = g.GenreId
+    JOIN InvoiceLine il ON t.TrackId = il.TrackId
+  WHERE genre = 'Rock'
+  GROUP BY 1
+  ORDER BY 4 DESC
+  LIMIT 10)
+SELECT 
+  top_songs.track AS top_song,
+  top_songs.album AS top_song_album,
+  top_albums.album AS top_albums,
+  CASE 
+    WHEN top_songs.album IN (SELECT album FROM top_albums) THEN 'Yes'
+    ELSE 'No'
+  END AS top_album_yesno
+FROM 
+  top_songs
+  LEFT JOIN top_albums ON top_songs.album = top_albums.album;
+
+/* Query 4 - 2 queries */
+/* Duration of Top 10 Selling Albums*/
+WITH top_albums AS (
+  SELECT 
+    al.AlbumId AS album_id,
+    al.Title AS album,
+    g.Name AS genre,
+    SUM(il.Quantity) AS total_purchases
+  FROM 
+    Album al
+    JOIN Track t ON al.AlbumId = t.AlbumId
+    JOIN Genre g ON t.GenreId = g.GenreId
+    JOIN InvoiceLine il ON t.TrackId = il.TrackId
+  WHERE genre = 'Rock'
+  GROUP BY 2
+  ORDER BY 4 DESC
+  LIMIT 10)
+SELECT 
+  top_albums.album,
+  SUM(t.Milliseconds)/60000 AS total_duration
+FROM 
+  top_albums
+  JOIN Track t ON top_albums.album_id = t.AlbumId
+GROUP BY 1
+ORDER BY top_albums.total_purchases DESC;
+
+/* The Average Duration of All Rock Albums */
+WITH all_albums AS (
+  SELECT 
+    al.Title AS album,
+    g.Name AS genre,
+    SUM(t.Milliseconds)/60000 AS album_duration
+  FROM 
+    Album al
+    JOIN Track t ON al.AlbumId = t.AlbumId
+    JOIN Genre g ON t.GenreId = g.GenreId
+  WHERE genre = 'Rock'
+  GROUP BY 1)
+SELECT 
+  AVG(album_duration) AS avg_all_albums_duration
+FROM 
+  all_albums;
+
+
