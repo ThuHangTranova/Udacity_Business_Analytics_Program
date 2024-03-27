@@ -1,6 +1,6 @@
 # Udacity Project: New York Stock Exchange Analysis
 
-### Google Sheets Link
+### Google Sheets Link: The Final Project
 Tranova, T.H. (2024) Udacity Project: New York Stock Exchange Analysis, Google Sheets. Available at: https://docs.google.com/spreadsheets/d/1wakuwWG3CGZPCh5--3m43n9Lf-2j1JcE6fgIVHZOJGE/edit?usp=sharing (Accessed: 17 March 2024). 
 
 ### Websites
