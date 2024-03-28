@@ -26,7 +26,7 @@ In this project, the objective was to query the Chinook Database, which contains
 [Database Used](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Chinook_Database.db)
 
 ## Project 4: Build Data Dashboards
-The goal of this project was to create visualisations to reveal insights form a dataset on 'Flight Delays and Cancellations.'
+The goal of this project was to create visualisations to reveal insights from a dataset on 'Flight Delays and Cancellations.'
 
 [Storyboard #1](https://public.tableau.com/views/UdacityProject-Insight1_17098525755180/Story1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)  
 
