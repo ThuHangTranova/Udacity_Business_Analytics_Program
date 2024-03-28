@@ -17,7 +17,7 @@ The objective of this project was to analyse real-life data from the New York St
 [The Final Presentation](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%202%3A%20Analyse%20NYSE%20Data/Udacity_Project_NYSE_Presentation.pdf)
 
 ## Project 3: Query a Digital Music Store Database
-In this project, the Chinook Database was queried to assist the Chinook team in understanding their media inventory, their customers, and invoice information.
+In this project, the objective was to query the Chinook Database, which contains information about a music store. The goal was to assist the Chinook team in understanding their media inventory, their customers, and invoice information.
 
 [The Final Presentation](https://github.com/ThuHangTranova/Udacity_Business_Analytics_Program/blob/main/Project%203%3A%20Query%20a%20Digital%20Music%20Store%20Database%20Project/Udacity_SQL_Presentation.pdf)
   
